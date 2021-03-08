@@ -1,0 +1,10 @@
+on: push
+name: Validate
+jobs:
+  kubeval:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: test
+      uses: syed-awais-ali/cfn_validator@master
+      
